@@ -1,0 +1,100 @@
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+   
+    .titleName{
+        color:  #120338;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.125rem; /* 112.5% */
+    }
+    .cancelButton{
+        color:  #595959;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.125rem; /* 128.571% */
+    }
+}
+.taskMainContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .taskCount{
+        font-size: 1rem;
+    }
+    .taskSubContainer{
+        .taskItem{
+            border-top: 0.1rem solid #D9D9D9;
+            display: flex;
+            align-items: flex-start;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+                .icon{
+                    padding: 0.5rem;
+                    .completed{
+                        color: green;
+                    }
+                }
+
+                .taskDetail{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex:1;
+                    h3{
+                        color: var(--default-default-10, #120338);
+                        font-size: 0.875rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 1rem; /* 114.286% */
+                    }
+                    .dateFormat{
+                        color: var(--gray-gray-8, #595959);
+                        font-size: 0.75rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 0.875rem; 
+                    }
+                    .completed{
+                        text-decoration: line-through;
+                    }
+                    
+                }
+                .overdue{
+                    background-color: #FF4D4F;
+                }
+                .upcoming{
+                    background-color: #FFA940;
+                }
+                .completedTag{
+                    background-color: #73D13D;
+                }
+                .tag{
+                    display: inline-flex;
+                    padding: 0.25rem 0.5rem;
+                    align-items: center;
+                    gap: 0.25rem;
+                    border-radius: 0.125rem;
+                    
+
+                   
+                    .tagName{
+                        color: #FFF;
+                        font-size: 0.75rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 0.875rem;
+                    }
+                }
+            }
+            .taskItem:first-child {
+                border-top: 0.1rem solid #8C8C8C; /* Replace 'red' with the desired color */
+              }
+        }
+    }
+    
